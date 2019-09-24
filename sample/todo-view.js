@@ -37,7 +37,7 @@ class TodoView extends LitElement {
         this.task = event.target.value;
     }
     addTodo() {
-        this.todos = Object.assign([], this.todos.push(this.task));
+        this.todos = [ ...this.todos, this.task ];
     }
     render() {
         return html`
