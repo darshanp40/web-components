@@ -38,6 +38,7 @@ class TodoView extends LitElement {
     }
     addTodo() {
         this.todos = [ ...this.todos, this.task ];
+        this.task = '';
     }
     render() {
         return html`
